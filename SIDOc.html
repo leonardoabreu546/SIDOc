@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIDoc - Sumários Docentes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Toggle invisível para modo escuro -->
+  <input type="checkbox" id="darkmode">
+
+  <header>
+    <h1>SIDoc - Sumários Docentes</h1>
+
+    <nav>
+      <button>Calendário</button>
+      <button>Assiduidade</button>
+      <button>Sumários</button>
+
+      <!-- Botão CSS-only -->
+      <label for="darkmode" class="theme-toggle">🌙 / ☀️</label>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CALENDÁRIO -->
+    <section>
+      <h2>Calendário de Aulas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Tipo</th><th>Data</th><th>Horário</th><th>Sala</th><th>Regime</th><th>Aula</th><th>Tema</th><th>Conteúdo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>TP</td><td>2026-01-10</td><td>18:00–21:00</td><td>Sala 31</td><td>NP</td><td>20</td><td>Introdução</td><td>Apresentação geral</td></tr>
+          <tr><td>2</td><td>TP</td><td>2026-01-17</td><td>18:00–21:00</td><td>Sala 31</td><td>NP</td><td>22</td><td>HTML/CSS</td><td>Estrutura e estilo</td></tr>
+          <tr><td>3</td><td>TP</td><td>2026-01-24</td><td>18:00–21:00</td><td>Sala 31</td><td>L</td><td>23</td><td>Grid</td><td>Layout responsivo</td></tr>
+          <tr><td>4</td><td>TP</td><td>2026-01-31</td><td>18:00–21:00</td><td>Sala 31</td><td>L</td><td>24</td><td>Flexbox</td><td>Componentização</td></tr>
+          <tr><td>5</td><td>TP</td><td>2026-02-07</td><td>18:00–21:00</td><td>Sala 31</td><td>L</td><td>25</td><td>DOM</td><td>Manipulação básica</td></tr>
+          <tr><td>6</td><td>TP</td><td>2026-02-14</td><td>18:00–21:00</td><td>Sala 31</td><td>L</td><td>25</td><td>UX/UI</td><td>Princípios gerais</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ASSIDUIDADE -->
+    <section>
+      <h2>Registo de Assiduidade</h2>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Nº Aluno</th><th>Nome</th><th>Presença</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>2174761</td><td>Afonso Batista Castro</td><td>✔️</td></tr>
+          <tr><td>2</td><td>2097523</td><td>Afonso Henriques</td><td>✔️</td></tr>
+          <tr><td>3</td><td>2255423</td><td>Afonso Duarte</td><td>✔️</td></tr>
+          <tr><td>4</td><td>2097046</td><td>Daniel Cabral</td><td>❌</td></tr>
+          <tr><td>5</td><td>2097043</td><td>Erica Neves</td><td>✔️</td></tr>
+          <tr><td>6</td><td>2097042</td><td>Francisco Mendonça</td><td>✔️</td></tr>
+          <tr><td>7</td><td>2097040</td><td>Francisco Couceiro</td><td>✔️</td></tr>
+          <tr><td>8</td><td>2097041</td><td>Igor Cebino</td><td>❌</td></tr>
+          <tr><td>9</td><td>2174762</td><td>João Abreu</td><td>✔️</td></tr>
+          <tr><td>10</td><td>2097443</td><td>João Gomes</td><td>✔️</td></tr>
+          <tr><td>11</td><td>2020099</td><td>José Laceret</td><td>✔️</td></tr>
+          <tr><td>12</td><td>2097044</td><td>José Gomes</td><td>✔️</td></tr>
+          <tr><td>13</td><td>2097045</td><td>Juan Carmona</td><td>✔️</td></tr>
+          <tr><td>14</td><td>2098048</td><td>Libardo Pereira</td><td>✔️</td></tr>
+          <tr><td>15</td><td>2098042</td><td>Lourenço Fernandes</td><td>❌</td></tr>
+          <tr><td>16</td><td>270004</td><td>Manuel Couceiro</td><td>✔️</td></tr>
+          <tr><td>17</td><td>2075521</td><td>Marco Rodrigues</td><td>✔️</td></tr>
+          <tr><td>18</td><td>2075523</td><td>Pedro Henriques</td><td>✔️</td></tr>
+          <tr><td>19</td><td>2097044</td><td>Pedro Dénia</td><td>✔️</td></tr>
+          <tr><td>20</td><td>2097523</td><td>Rodrigo Barros</td><td>✔️</td></tr>
+          <tr><td>21</td><td>2020124</td><td>Sandro Martins</td><td>✔️</td></tr>
+          <tr><td>22</td><td>2097042</td><td>Santi Spínola</td><td>❌</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SUMÁRIOS -->
+    <section>
+      <h2>Sumários</h2>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Hora</th><th>Tipo</th><th>Tópicos</th><th>Observações</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-01-10</td><td>18:00–21:00</td><td>TP</td><td>Introdução</td><td>Apresentação geral</td></tr>
+          <tr><td>2026-01-17</td><td>18:00–21:00</td><td>TP</td><td>HTML, CSS</td><td>Estrutura base</td></tr>
+          <tr><td>2026-01-24</td><td>18:00–21:00</td><td>TP</td><td>Grid</td><td>Layout responsivo</td></tr>
+          <tr><td>2026-01-31</td><td>18:00–21:00</td><td>TP</td><td>Flexbox</td><td>Componentização</td></tr>
+          <tr><td>2026-02-07</td><td>18:00–21:00</td><td>TP</td><td>DOM</td><td>Manipulação básica</td></tr>
+          <tr><td>2026-02-14</td><td>18:00–21:00</td><td>TP</td><td>UX/UI</td><td>Princípios gerais</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Universidade da Madeira — SIDoc v3.2.3
+  </footer>
+
+</body>
+</html>
